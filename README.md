@@ -1,4 +1,4 @@
-# Font Awesome for Rails asset pipeline
+# Font Awesome for Rails asset pipeline with SASS and SCSS
 
 The iconic font designed for use with _Twitter Bootstrap_
 
@@ -7,7 +7,7 @@ The full suite of pictographic icons, examples, and documentation can be found a
 
 ## Install
 
-`gem 'font-awesome-rails'`
+`gem 'font_awesome-sass-rails'`
 
 Then `bundle` it!
 

@@ -114,4 +114,5 @@ DEPENDENCIES
   rails (>= 3.1)
   rdoc (>= 3.12)
   rspec (>= 2.8.0)
+  sass (>= 3.0)
   simplecov (>= 0.5)

@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem 'rails',    '>= 3.1'
 gem 'compass',  '>= 0.11'
+gem 'sass',     '>= 3.0'
 
 group :development do
   gem "rspec",      ">= 2.8.0"

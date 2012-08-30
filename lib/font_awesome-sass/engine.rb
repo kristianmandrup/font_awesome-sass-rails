@@ -1,4 +1,4 @@
-module FontAwesome
+module FontAwesomeSass
   module Rails
     class Engine < ::Rails::Engine
     end

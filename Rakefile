@@ -1,4 +1,5 @@
-# encoding: utf-8
+# -*- encoding: utf-8 -*-
+require File.expand_path('../lib/font_awesome-sass/version', __FILE__)
 
 require 'rubygems'
 require 'bundler'
@@ -14,7 +15,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "font-awesome-rails"
+  gem.name = "font_awesome-sass-rails"
   gem.homepage = "http://github.com/kristianmandrup/font-awesome-rails"
   gem.license = "MIT"
   gem.summary = %Q{Font Awesome ready for use with Rails asset pipeline}
