@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
     "vendor/assets/stylesheets/font-awesome.sass",
     "vendor/assets/stylesheets/font-awesome.scss"
   ]
-  s.homepage = "http://github.com/kristianmandrup/font-awesome-rails"
+  s.homepage = "http://github.com/kristianmandrup/font_awesome-sass-rails"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
