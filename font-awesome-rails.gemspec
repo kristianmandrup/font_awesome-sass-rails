@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "font-awesome-rails.gemspec",
     "lib/font-awesome-rails.rb",
     "lib/font-awesome/engine.rb",
     "spec/spec_helper.rb",
