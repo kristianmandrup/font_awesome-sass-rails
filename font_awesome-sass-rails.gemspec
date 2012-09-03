@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "font_awesome-sass-rails"
-  s.version = "2.0.0"
+  s.version = "2.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup"]
-  s.date = "2012-08-30"
+  s.date = "2012-09-03"
   s.description = "Use Font Awesome in your Rails app :)"
   s.email = "kmandrup@gmail.com"
   s.extra_rdoc_files = [
@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
     "vendor/assets/stylesheets/font-awesome.sass",
     "vendor/assets/stylesheets/font-awesome.scss"
   ]
-  s.homepage = "http://github.com/kristianmandrup/font-awesome-rails"
+  s.homepage = "http://github.com/kristianmandrup/font_awesome-sass-rails"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
