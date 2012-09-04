@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source :rubygems
 
 gem 'rails',    '>= 3.1'
 gem 'compass',  '>= 0.11'

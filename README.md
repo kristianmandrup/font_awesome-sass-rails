@@ -26,6 +26,21 @@ On IE7
 The assets contains the `font-awesome` stylesheet in: LESS, SASS, SCSS and CSS.
 The fonts are available in `assets/fonts`.
 
+## View helpers
+
+```ruby
+awesome_icon name, *args, &block
+```
+
+Usage examples:
+
+```ruby
+awesome_icon(:ok).should == "<i class=\"icon-ok\"></i>"
+awesome_icon(:ok, size: :large).should == "<i class=\"icon-ok icon-large\"></i>"
+awesome_icon(:ok, 'Okay :)').should == "<i class=\"icon-ok\"></i>Okay :)"
+awesome_icon(:ok) { 'Okay :)'}.should == "<i class=\"icon-ok\"></i>Okay :)"
+```
+
 ## Version
 
 Font Awesome 2.0 is currently included. Enjoy :)
