@@ -20,11 +20,11 @@
     Twitter: http://twitter.com/fortaweso_me
     Work: Lead Product Designer @ http://kyruus.com
 
-    Using asset_path
+    Using asset_path (scss)
     */
 
 @import "compass/css3/font-face";
-$font_path: <%= asset_path "fontawesome-webfont" %> !default;
+$font_path: asset-path("fontawesome-webfont", font) !default;
 
 @include font-face(
     'FontAwesome',

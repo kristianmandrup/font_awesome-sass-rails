@@ -20,11 +20,11 @@
  *    Twitter: http://twitter.com/fortaweso_me
  *    Work: Lead Product Designer @ http://kyruus.com
  *
- *    Using asset_path
+ *    Using asset_path (sass)
 
 @import compass/css3/font-face
 
-$font_path: <%= asset_path "fontawesome-webfont" %> !default
+$font_path: asset-path("fontawesome-webfont", font) !default
 
 +font-face("FontAwesome", font-files("#{$font_path}.woff", woff, "#{$font_path}.ttf", truetype, "#{$font_path}.otf", opentype, "#{$font_path}.svgz#FontAwesomeRegular", svg, "#{$font_path}.svg#FontAwesomeRegular", svg), "#{$font_path}.eot", normal, normal)
 
