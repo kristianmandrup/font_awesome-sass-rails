@@ -39,8 +39,10 @@ Gem::Specification.new do |s|
     "vendor/assets/fonts/fontawesome-webfont.ttf",
     "vendor/assets/fonts/fontawesome-webfont.woff",
     "vendor/assets/stylesheets/font-awesome-ie7.css",
-    "vendor/assets/stylesheets/font-awesome.css",
-    "vendor/assets/stylesheets/font-awesome.less"
+    "vendor/assets/stylesheets/font-awesome.css.erb",
+    "vendor/assets/stylesheets/font-awesome.less.erb",
+    "vendor/assets/stylesheets/font-awesome.sass",
+    "vendor/assets/stylesheets/font-awesome.scss"
   ]
   s.homepage = "http://github.com/kristianmandrup/font_awesome-sass-rails"
   s.licenses = ["MIT"]
