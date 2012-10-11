@@ -24,7 +24,14 @@ On IE7
 ```
 
 The assets contains the `font-awesome` stylesheet in: LESS, SASS, SCSS and CSS.
-The fonts are available in `assets/fonts`.
+The fonts are available in `assets/fonts`. To load the font in a particular format, specify as one of the following:
+
+```css
+ *= require font-awesome-sass
+ *= require font-awesome-less
+ *= require font-awesome-scss
+```
+
 
 ## View helpers
 
