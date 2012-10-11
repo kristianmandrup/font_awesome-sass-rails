@@ -41,6 +41,12 @@ awesome_icon(:ok, 'Okay :)').should == "<i class=\"icon-ok\"></i>Okay :)"
 awesome_icon(:ok) { 'Okay :)'}.should == "<i class=\"icon-ok\"></i>Okay :)"
 ```
 
+For hyphenated icon names, surround the icon name with quotes:
+
+```ruby
+awesome_icon(:'bookmark-empty').should == "<i class=\"icon-bookmark-empty\"></i>"
+```
+
 ## Version
 
 Font Awesome 2.0 is currently included. Enjoy :)
