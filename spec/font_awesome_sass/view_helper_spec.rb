@@ -52,12 +52,21 @@ describe FontAwesomeSass::ViewHelper do
 
   describe 'awesome_btn' do
     specify do
+      res = awesome_btn do
+        awesome_icon(:ok) + awesome_icon(:plus)
+      end
+      res.should == "<a class=\"btn\" href=\"#\"><i class=\"icon-ok\"></i><i class=\"icon-plus\"></i></a>"
+    end
+
+    specify do
       res = awesome_btn(:ok, size: 'large', type: 'primary', href: 'google.com') do
         awesome_icon(:ok) + awesome_icon(:plus)
       end
-      res.should == "<a class=\"btn  btn-large btn-primary\" href=\"google.com\"><i class=\"icon-ok\"></i><i class=\"icon-plus\"></i></a>"
+      res.should == "<a class=\"btn btn-large btn-primary\" href=\"google.com\"><i class=\"icon-ok\"></i><i class=\"icon-plus\"></i></a>"
     end
   end
+
+
   
   describe 'awesome_button' do
     describe ".awesome_button(:ok, size: 'large', type: 'primary', href: 'google.com') {'Okay :)'}" do

@@ -19,7 +19,7 @@ module FontAwesomeSass
       size = options[:size] if options[:size]
       type = options.delete(:type) if options[:type]
 
-      clazz = "btn "
+      clazz = "btn"
       clazz << " btn-#{size}" if size
       clazz << " btn-#{type}" if type && %w{primary}.include?(type.to_s)
 
