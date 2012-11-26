@@ -43,12 +43,34 @@ awesome_icon name, *args, &block
 Usage examples:
 
 ```ruby
-awesome_icon(:ok).should == "<i class=\"icon-ok\"></i>"
-awesome_icon(:ok, size: :large).should == "<i class=\"icon-ok icon-large\"></i>"
-awesome_icon(:ok, 'Okay :)').should == "<i class=\"icon-ok\"></i>Okay :)"
-awesome_icon(:ok) { 'Okay :)'}.should == "<i class=\"icon-ok\"></i>Okay :)"
+awesome_icon(:ok)
+
+# => <i class="icon-ok"></i>
+
+awesome_icon(:ok, size: :large)
+
+# => <i class="icon-ok icon-large"></i>
+
+awesome_icon(:ok, 'Okay :)')
+
+# => <i class="icon-ok"></i>Okay :)
+
+awesome_icon(:ok) { 'Okay :)'}
+
+# => "<i class="icon-ok"></i>Okay :)"
+
+awesome_icon(:ok, style: 'font-size: 10px', class: 'topleft')
+
+# => <i class="icon-ok topleft" style="font-size: 10px"></i>
 ```
 
+Awesome button!
+
+```ruby
+awesome_button(:ok, size: 'large', type: 'primary', href: 'google.com') {'Okay :)'}
+
+# => <a class="btn  btn-large btn-primary" href="google.com"><i class="icon-ok icon-large"></i>Okay :)</a>
+```
 ## Troubleshooting
 
 If you get an error, saying that the asset (font-awesome) couldn't be found, try moving the gem statement outside any group.
