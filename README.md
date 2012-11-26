@@ -77,6 +77,12 @@ If you get an error, saying that the asset (font-awesome) couldn't be found, try
 
 See http://stackoverflow.com/questions/9047478/rails-app-with-twitter-bootstrap-works-in-development-but-not-in-production and http://edgeguides.rubyonrails.org/asset_pipeline.html
 
+For hyphenated icon names, surround the icon name with quotes:
+
+```ruby
+awesome_icon(:'bookmark-empty').should == "<i class=\"icon-bookmark-empty\"></i>"
+```
+
 ## Version
 
 Font Awesome 2.0 is currently included. Enjoy :)
