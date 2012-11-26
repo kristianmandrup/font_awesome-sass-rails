@@ -71,6 +71,30 @@ awesome_button(:ok, size: 'large', type: 'primary', href: 'google.com') {'Okay :
 
 # => <a class="btn  btn-large btn-primary" href="google.com"><i class="icon-ok icon-large"></i>Okay :)</a>
 ```
+
+## Composite icons using overlay effects
+
+Use something like the following CSS:
+
+```css
+.decorator.top {
+  font-size: 10px; 
+  position: relative; 
+  left: -0.6em; 
+  top: -0.6em;
+  color: orange;
+}
+```
+
+Then have the primary icon, followed by the icon to use for the overlay.
+
+```ruby
+= awesome_icon(:group)
+= awesome_icon(:plus, class:'decorator tl')
+```
+
+The second icon (plus) will be pushed half a character back (left) and up, to create a nice overlay effect - an "Add group" icon.
+
 ## Troubleshooting
 
 If you get an error, saying that the asset (font-awesome) couldn't be found, try moving the gem statement outside any group.
