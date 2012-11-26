@@ -78,7 +78,7 @@ Awesome btn!
 = awesome_btn :ok, size: 'large', type: 'primary', href: 'google.com'
   = awesome_icon(:ok)
   = awesome_icon(:plus, class: 'btn-overlay')
-  = Okay+
+  = 'Okay+'
 ```
 
 # => <a class="btn  btn-large btn-primary" href="google.com"><i class="icon-ok"></i><i class="icon-plus btn-overlay"></i>Okay+</a>
