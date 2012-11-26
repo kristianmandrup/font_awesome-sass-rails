@@ -11,27 +11,28 @@ The full suite of pictographic icons, examples, and documentation can be found a
 
 Then `bundle` it!
 
-## Configuration
+## CSS Configuration
+
+In your CSS manifest file, fx `application.css`
 
 ```css
  *= require font-awesome
 ```
 
-On IE7
+For IE7
 
 ```css
  *= require font-awesome-ie
 ```
 
 The assets contains the `font-awesome` stylesheet in: LESS, SASS, SCSS and CSS.
-The fonts are available in `assets/fonts`. To load the font in a particular format, specify as one of the following:
+The fonts are available in `assets/fonts`. To load the font in a particular format, specify one of the following:
 
 ```css
  *= require font-awesome-sass
  *= require font-awesome-less
  *= require font-awesome-scss
 ```
-
 
 ## View helpers
 
