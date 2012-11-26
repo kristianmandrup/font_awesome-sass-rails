@@ -49,6 +49,12 @@ awesome_icon(:ok, 'Okay :)').should == "<i class=\"icon-ok\"></i>Okay :)"
 awesome_icon(:ok) { 'Okay :)'}.should == "<i class=\"icon-ok\"></i>Okay :)"
 ```
 
+## Troubleshooting
+
+If you get an error, saying that the asset (font-awesome) couldn't be found, try moving the gem statement outside any group.
+
+See http://stackoverflow.com/questions/9047478/rails-app-with-twitter-bootstrap-works-in-development-but-not-in-production and http://edgeguides.rubyonrails.org/asset_pipeline.html
+
 ## Version
 
 Font Awesome 2.0 is currently included. Enjoy :)
