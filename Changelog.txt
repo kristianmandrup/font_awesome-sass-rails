@@ -1,3 +1,7 @@
+## 2.2.1
+
+* Added `awesome_btn` helper, for nesting any tags such as multiple `awesome_icon` tags.
+
 ## 2.2.0
 
 * Added ability to enhace class and add any html attributes on generated icon tag
