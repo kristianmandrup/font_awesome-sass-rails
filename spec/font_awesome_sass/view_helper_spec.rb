@@ -5,13 +5,25 @@ describe FontAwesomeSass::ViewHelper do
           FontAwesomeSass::ViewHelper
   
   describe 'awesome_icon' do          
-    describe ".awesome_icon :ok, 'Okay :)'" do
+    describe ".awesome_icon :ok" do
       specify do
         awesome_icon(:ok).should == "<i class=\"icon-ok\"></i>"
       end
     end
 
-    describe ".awesome_icon :ok, 'Okay :)'" do
+    describe ".awesome_icon :oki_doki'" do
+      specify do
+        awesome_icon(:oki_doki).should == "<i class=\"icon-oki-doki\"></i>"
+      end
+    end
+
+    describe ".awesome_icon :icon_oki_doki'" do
+      specify do
+        awesome_icon(:icon_oki_doki).should == "<i class=\"icon-oki-doki\"></i>"
+      end
+    end
+
+    describe ".awesome_icon :ok, size: :large'" do
       specify do
         awesome_icon(:ok, size: :large).should == "<i class=\"icon-ok icon-large\"></i>"
       end

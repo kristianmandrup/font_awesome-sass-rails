@@ -7,6 +7,9 @@ module FontAwesomeSass
       content ||= capture(&block) if block_given?
       content ||= ''
 
+      name = name.to_s.dasherize
+      name.gsub! /^icon-/, ''
+
       clazz = "icon-#{name}"
       clazz << " icon-#{size}" if size.to_s == 'large'
       clazz << " " << options.delete(:class) if options[:class]

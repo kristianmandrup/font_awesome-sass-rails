@@ -119,6 +119,12 @@ For hyphenated icon names, surround the icon name with quotes:
 awesome_icon(:'bookmark-empty').should == "<i class=\"icon-bookmark-empty\"></i>"
 ```
 
+Or just use underscores, which will be auto-converted to dashes.
+
+```ruby
+awesome_icon(:bookmark_empty).should == "<i class=\"icon-bookmark-empty\"></i>"
+```
+
 ## Version
 
 Font Awesome 2.0 is currently included. Enjoy :)
