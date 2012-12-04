@@ -64,6 +64,11 @@ describe FontAwesomeSass::ViewHelper do
 
   describe 'awesome_btn' do
     specify do
+      res = awesome_btn 'Okay'
+      res.should == "<a class=\"btn\" href=\"#\">Okay</a>"
+    end
+
+    specify do
       res = awesome_btn do
         awesome_icon(:ok) + awesome_icon(:plus)
       end

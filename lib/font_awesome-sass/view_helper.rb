@@ -21,15 +21,18 @@ module FontAwesomeSass
       options = args.extract_options!
       size = options[:size] if options[:size]
       type = options.delete(:type) if options[:type]
+      text = options.delete(:text) if options[:text]
+      text ||= args.last if args.last.kind_of?(String)
 
       clazz = "btn"
-      clazz << " btn-#{size}" if size
+      clazz << " btn-#{size}" if size && %w{large small}.include?(size.to_s)
       clazz << " btn-#{type}" if type && %w{primary}.include?(type.to_s)
 
       href = options.delete(:href) || '#'
+      content = block_given? ? capture(&block) : text
 
       content_tag :a, {}.merge(class: clazz, href: href).merge(options[:btn] || {}) do
-        capture(&block)
+        content        
       end
     end
 
