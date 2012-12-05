@@ -51,13 +51,13 @@ describe FontAwesomeSass::ViewHelper do
     # <i class="icon-ok"></i>Okay :)
     describe ".awesome_icon :ok, 'Okay :)'" do
       specify do
-        awesome_icon(:ok, 'Okay :)').should == "<i class=\"icon-ok\"></i>Okay :)"
+        awesome_icon(:ok, 'Okay :)').should == "<i class=\"icon-ok\"></i> Okay :)"
       end
     end
 
     describe ".awesome_icon(:ok) {'Okay :)'}" do
       specify do
-        awesome_icon(:ok) { 'Okay :)'}.should == "<i class=\"icon-ok\"></i>Okay :)"
+        awesome_icon(:ok) { 'Okay :)'}.should == "<i class=\"icon-ok\"></i> Okay :)"
       end
     end
   end
@@ -89,7 +89,7 @@ describe FontAwesomeSass::ViewHelper do
     describe ".awesome_button(:ok, size: 'large', type: 'primary', href: 'google.com') {'Okay :)'}" do
       specify do
         res = awesome_button(:ok, size: 'large', type: 'primary', href: 'google.com') {'Okay :)'}
-        res.should == "<a class=\"btn  btn-large btn-primary\" href=\"google.com\"><i class=\"icon-ok icon-large\"></i>Okay :)</a>"
+        res.should == "<a class=\"btn  btn-large btn-primary\" href=\"google.com\"><i class=\"icon-ok icon-large\"></i> Okay :)</a>"
       end
     end    
   end 
