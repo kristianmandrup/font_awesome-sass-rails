@@ -1,9 +1,0 @@
-## 2.2.1
-
-* Added `awesome_btn` helper, for nesting any tags such as multiple `awesome_icon` tags.
-
-## 2.2.0
-
-* Added ability to enhace class and add any html attributes on generated icon tag
-* Added `awesome_button` helper, that wraps the `awesome_icon` helper with an anchor tag. For use with Twitter Bootstrap (uses `btn` classes)
-
